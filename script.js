@@ -15,9 +15,5 @@ setInterval(changeSlide, 4000);
 // MOBILE MENU
 function toggleMenu(){
     let menu = document.getElementById("navLinks");
-    if(menu.style.display === "flex"){
-        menu.style.display = "none";
-    } else {
-        menu.style.display = "flex";
-    }
+    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
 }
